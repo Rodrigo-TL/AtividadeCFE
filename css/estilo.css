@@ -1,0 +1,131 @@
+/* Customizações Globais da Loja Gamer */
+body {
+    background-color: #0d0d11 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*cabeçalho*/
+.bg-black {
+    background-color: #000000 !important;
+}
+
+.border-purple {
+    border-color: #8B5CF6 !important;
+}
+
+.text-purple {
+    color: #8B5CF6 !important;
+}
+
+.btn-outline-purple {
+    color: #8B5CF6;
+    border-color: #8B5CF6;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-purple:hover {
+    background-color: #8B5CF6;
+    color: #000000;
+    font-weight: bold;
+    box-shadow: 0 0 10px #8B5CF6;
+}
+
+/*Conteudo principal*/
+.linha-titulo {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    text-shadow: 0 0 8px #8B5CF6;
+}
+
+/*banner*/
+.bg-black-transparente {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#carrosselLH img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/*Produtos vendidos*/
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(139, 92, 246, 0.4);
+}
+
+.btn-purple {
+    background-color: #4C1D95;
+    color: #ffffff;
+    border: 1px solid #8B5CF6;
+    transition: all 0.3s ease;
+}
+
+.btn-purple:hover {
+    background-color: #8B5CF6;
+    color: #000000;
+    font-weight: bold;
+    box-shadow: 0 0 12px #8B5CF6;
+}
+
+/*Rodapé*/
+footer p {
+    margin-bottom: 0;
+}
+
+/*Botão Voltar topo*/
+#voltar-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    border-color: #8B5CF6;
+    color: #8B5CF6;
+    transition: all 0.3s ease;
+}
+
+#voltar-topo:hover {
+    background-color: #8B5CF6;
+    color: #000000;
+    box-shadow: 0 0 10px #8B5CF6;
+}
+
+/* página de login */
+.card-login {
+    background-color: #000000;
+    border: 1px solid #8B5CF6;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
+}
+
+/* Formulário de cadastro*/
+.form-control {
+    background-color: #16161a !important;
+    border: 1px solid #33333b !important;
+    color: #ffffff !important;
+}
+
+.form-control:focus {
+    border-color: #8B5CF6 !important;
+    box-shadow: 0 0 8px rgba(139, 92, 246, 0.5) !important;
+}
+
+/* MEDIA QUERY PARA RESPONSIVIDADE (Critério Obrigatório do SENAI) */
+@media (max-width: 768px) {
+    .linha-titulo {
+        font-size: 1.5rem;
+    }
+    .carousel-caption {
+        display: none !important;
+    }
+    #voltar-topo {
+        bottom: 10px;
+        right: 10px;
+        padding: 5px 10px;
+    }
+}
