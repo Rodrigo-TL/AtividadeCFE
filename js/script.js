@@ -1,5 +1,5 @@
-// funcao simples para o botaovoltar ao topo que o professor pediu
-function topo() {
+// 1. funcao simples para o botao voltar ao topo que o professor pediu
+window.topo = function() {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
@@ -18,10 +18,19 @@ window.onscroll = function() {
     }
 };
 
-// interatividade simples com jquery para a loja gamer
-$(document).ready(function() {
-    $(".btn-comprar").on("click", function() {
-        let jogo = $(this).closest(".card-body").find(".card-title").text();
-        alert("O jogo '" + jogo + "' foi colocado no carrinho!");
+// 2. interatividade de compra usando javascript puro (sem travar)
+document.addEventListener("DOMContentLoaded", function() {
+    // busca todos os botoes com a classe btn-comprar
+    let botoesComprar = document.querySelectorAll(".btn-comprar");
+    
+    botoesComprar.forEach(function(botao) {
+        botao.addEventListener("click", function() {
+            // navega pelo html ate achar o titulo do card correto
+            let cardBody = this.closest(".card-body");
+            let jogo = cardBody.querySelector(".card-title").innerText;
+            
+            // exibe o alerta na tela
+            alert("O jogo '" + jogo + "' foi colocado no carrinho!");
+        });
     });
 });
