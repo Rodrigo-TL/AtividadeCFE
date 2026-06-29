@@ -20,20 +20,27 @@
         <section id="section-login">
             <h1>Login</h1>
             <div class="d-flex justify-content-center">
-                <form method="post" action="" id="login">
-                    <p>
-                        <label for="usuario">Nome: </label>
-                        <input id="usuario" name="usuario" required="required" type="text"
-                            placeholder="Insira o seu usuário" class="form-control" />
-                    </p>
-                    <p>
-                        <label for="senha">Senha: </label>
-                        <input id="senha" name="senha" required="required" type="password"
-                            placeholder="Insira a sua senha" class="form-control" />
-                    </p>
-                    <p>
-                        <input type="button" value="login" class="btn btn-primary" id="bt-login" onclick="login()" />
-                    </p>
+                            <form method="post" action="" id="login">
+                <p>
+                    <label for="usuario" class="text-light fw-bold">Usuário: </label>
+                    <input id="usuario" name="usuario" required="required" type="text"
+                        placeholder="ex. nome de usuário" class="form-control" />
+                </p>
+                <p>
+                    <label for="email" class="text-light fw-bold">E-mail: </label>
+                    <input id="email" name="email" required="required" type="email"
+                        placeholder="seu@email.com.br" class="form-control" />
+                </p>
+                <p>
+                    <label for="senha" class="text-light fw-bold">Senha: </label>
+                    <input id="senha" name="senha" required="required" type="password"
+                        placeholder="mínimo de 6 caracteres" class="form-control" />
+                </p>
+                <p>
+                    <input type="button" value="Cadastrar" class="btn btn-purple" id="bt-cadastrar"
+                        onclick="cadastro()" />
+                </p>
+
                 </form>
             </div>
         </section>
