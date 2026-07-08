@@ -1,5 +1,3 @@
-//efeito de esconder formulário de cadastro
-
 // Efeito de esconder e mostrar o formulário de cadastro de forma interativa
 $(document).ready(function() {
     
